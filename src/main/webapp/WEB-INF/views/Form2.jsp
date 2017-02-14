@@ -109,6 +109,10 @@
 					<td><input type="text" name="email" value="${user.email}"></td>
 				</tr>
 				<tr>
+					<td><h6 style="text-align:right; margin-right:5px;">Phone:</h6></td>
+					<td><input type="text" name="phone" value="${phone.email}"></td>
+				</tr>
+				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Address Line 1:</h6></td>
 					<td><input type="text" name="address1" value="${user.address1}"></td>
 				</tr>

@@ -26,6 +26,8 @@ public class User implements Serializable{
 	private String email;
 	@NotEmpty
 	/*not empty*/
+	private String phone;
+	
 	private String address1;
 	//no particular ones, can be empty
 	private String address2;
@@ -59,6 +61,14 @@ public class User implements Serializable{
 
 	public String getLastName() {
 		return lastName;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getPhone() {
+		return phone;
 	}
 
 	public void setLastName(String lastName) {
