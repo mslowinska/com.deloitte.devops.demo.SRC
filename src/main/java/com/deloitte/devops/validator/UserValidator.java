@@ -12,11 +12,13 @@ public class UserValidator implements Validator {
 		return User.class.equals(clazz);
 	}
 
+	
 	@Override
 	public void validate(Object target, Errors errors) {
 		User user = (User) target;
 		
 		System.out.println("Inside Validator");
+		
 		
 		if(user.getFirstName().isEmpty()) {
 			errors.rejectValue("firstName", "NotEmpty.firstName");	
@@ -40,9 +42,6 @@ public class UserValidator implements Validator {
 			errors.rejectValue("address1", "NotEmpty.address1");	
 		}
 		
-//		if(user.getAddress2().isEmpty()) {
-//			errors.rejectValue("address2", "NotEmpty.address2");	
-//		}
 		
 		if(user.getPostcode().isEmpty()) {
 			errors.rejectValue("postcode", "NotEmpty.postcode");	
@@ -56,16 +55,32 @@ public class UserValidator implements Validator {
 			errors.rejectValue("nameCard", "NotEmpty.nameCard");	
 		}
 		
-//		if(user.getNumberCard().isEmpty()) {
-//			errors.rejectValue("numberCard", "NotEmpty.numberCard");	
-//		}
-	
+		/*Card number not empty and 16 digits no spaces*/
+		if(user.getNumberCard().isEmpty()) {
+			errors.rejectValue("numberCard", "NotEmpty.numberCard");	
+		}
+		
+		if(user.getNumberCard().matches("[0-9]{16}")==false) {
+			errors.rejectValue("numberCard", "Valid.numberCard");	
+		}
+		
+/*		Expiry Date - not empty and DD/MM format*/
 		if(user.getExpiryDate().isEmpty()) {
 			errors.rejectValue("expiryDate", "NotEmpty.expiryDate");	
 		}
-//		if(user.getSecurityCard().isEmpty()) {
-//			errors.rejectValue("securityCard", "NotEmpty.securityCard");	
-//		}
+	
+		if(user.getExpiryDate().isEmpty()==false && user.getExpiryDate().matches("[0-9]{2}\\/[0-9]{2}")==false) {
+			errors.rejectValue("expiryDate", "Valid.expiryDate");	
+		}
+		
+/*		Security Card - not empty and 3 digits*/
+		if(user.getSecurityCard().isEmpty()) {
+			errors.rejectValue("securityCard", "NotEmpty.securityCard");	
+		}
+		if(user.getSecurityCard().isEmpty()==false && user.getSecurityCard().matches("[0-9]{3}")==false) {
+			errors.rejectValue("securityCard", "Valid.securityCard");	
+		}
+		
 		
 		
 	}

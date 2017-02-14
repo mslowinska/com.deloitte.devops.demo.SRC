@@ -43,13 +43,13 @@ public class User implements Serializable{
 	private String nameCard;
 	//16 digits avoid 12345678910 etc can be custom
 	@NumberFormat
-	private Integer numberCard;
+	private String numberCard;
 	//type date mm/yy
 	@NotEmpty
 	private String expiryDate;
 	//3 digits, ints
 	@NotEmpty
-	private Integer securityCard;
+	private String securityCard;
 
 	public String getFirstName() {
 		return firstName;
@@ -123,11 +123,11 @@ public class User implements Serializable{
 		this.nameCard = nameCard;
 	}
 	
-	public Integer getNumberCard() {
+	public String getNumberCard() {
 		return numberCard;
 	}
 
-	public void setNumberCard(Integer numberCard) {
+	public void setNumberCard(String numberCard) {
 		this.numberCard = numberCard;
 	}
 	
@@ -139,11 +139,11 @@ public class User implements Serializable{
 		this.expiryDate = expiryDate;
 	}
 
-	public Integer getSecurityCard() {
+	public String getSecurityCard() {
 		return securityCard;
 	}
 
-	public void setSecurityCard(Integer securityCard) {
+	public void setSecurityCard(String securityCard) {
 		this.securityCard = securityCard;
 	}
 }

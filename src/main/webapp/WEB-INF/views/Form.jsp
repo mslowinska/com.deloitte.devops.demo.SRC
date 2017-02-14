@@ -147,7 +147,7 @@
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">CVV*:</h6></td>
 					<td><form:input path="securityCard" /></td>
-					<td><div style="margin-left:10px; color:red;"><form:errors path="securityCard" cssClass="error"></form:errors></div></td>
+					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="securityCard" cssClass="error"></form:errors></h6></div></td>
 				</tr>
 				<tr>
 					<td colspan="3" align="center"><button class="btn btn-primary" type="submit" style="margin-top:20px; width:250px;" value="Submit" />Proceed</button></td>
