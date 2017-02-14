@@ -48,9 +48,9 @@ public class demoTest {
         user1.setPostcode("SE113UU");
         user1.setCity("city");
         user1.setNameCard("John Doe");
-        user1.setNumberCard(1234123);
+        user1.setNumberCard("1234123412341234");
         user1.setExpiryDate("12/12");
-        user1.setSecurityCard(123);
+        user1.setSecurityCard("123");
 
         errors1 = new BeanPropertyBindingResult(user1, "user1");
         
@@ -63,9 +63,9 @@ public class demoTest {
         user2.setPostcode("SE113UU");
         user2.setCity("city");
         user2.setNameCard("John Doe");
-        user2.setNumberCard(1234123);
+        user2.setNumberCard("1234123");
         user2.setExpiryDate("12/12");
-        user2.setSecurityCard(123);
+        user2.setSecurityCard("123");
 
         errors2 = new BeanPropertyBindingResult(user2, "user2");
     }
