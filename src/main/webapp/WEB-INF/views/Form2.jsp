@@ -88,62 +88,62 @@
                 	<div align="center">
                 	<form:form action="confirmation" method="post" modelAttribute="user">
                 	<table>
-                <tr>
-					<td><h6 style="text-align:right; margin-right:5px;">Product Name:</h6></td>
-					<td>Canon EOS 1300D DSLR Camera with 18-55mm Lens</td>
+				<tr>
+					<td><h6 style="text-align:right; margin-right:5px;">Product:</h6></td>
+					<td><input style="width:200px;" type="text" name="price" value="Canon EOS 1300D" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Price:</h6></td>
-					<td>£329.99</td>
+					<td><input style="width:200px;" type="text" name="price" value="£329.99" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">First Name:</h6></td>
-					<td><input type="text" name="firstName" value="${user.firstName}"></td>
+					<td><input style="width:200px;" type="text" name="firstName" value="${user.firstName}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Last Name:</h6></td>
-					<td><input type="text" name="lastName" value="${user.lastName}"></td>
+					<td><input style="width:200px;" type="text" name="lastName" value="${user.lastName}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">E-mail:</h6></td>
-					<td><input type="text" name="email" value="${user.email}"></td>
+					<td><input style="width:200px;" type="text" name="email" value="${user.email}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Phone:</h6></td>
-					<td><input type="text" name="phone" value="${phone.email}"></td>
+					<td><input style="width:200px;" type="text" name="phone" value="${user.phone}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Address Line 1:</h6></td>
-					<td><input type="text" name="address1" value="${user.address1}"></td>
+					<td><input style="width:200px;" type="text" name="address1" value="${user.address1}" readonly></td>
 				</tr>
 				 <tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Address Line 2:</h6></td>
-					<td><input type="text" name="address2" value="${user.address2}"></td>
+					<td><input style="width:200px;" type="text" name="address2" value="${user.address2}" readonly></td>
 				</tr>		
 				<tr>
 				
 					<td><h6 style="text-align:right; margin-right:5px;">Postcode:</h6></td>
-					<td><input type="text" name="postcode" value="${user.postcode}"></td>
+					<td><input style="width:200px;" type="text" name="postcode" value="${user.postcode}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">City:</h6></td>
-					<td><input type="text" name="city" value="${user.city}"></td>
+					<td><input style="width:200px;" type="text" name="city" value="${user.city}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Name on Card:</h6></td>
-					<td><input type="text" name="nameCard" value="${user.nameCard}"></td>
+					<td><input style="width:200px;" type="text" name="nameCard" value="${user.nameCard}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Card Number:</h6></td>
-					<td><input type="text" name="numberCard" value="${user.numberCard}"></td>
+					<td><input style="width:200px;" type="text" name="numberCard" value="${user.numberCard}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Expiry Date:</h6></td>
-					<td><input type="text" name="expiryDate" value="${user.expiryDate}"></td>
+					<td><input style="width:200px;" type="text" name="expiryDate" value="${user.expiryDate}" readonly></td>
 				</tr>
 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">CVV:</h6></td>
-					<td><input type="text" name="securityCard" value="${user.securityCard}"></td>
+					<td><input style="width:200px;" type="text" name="securityCard" value="${user.securityCard}" readonly></td>
 				</tr>
 				<tr>
 					<td colspan="3" align="center"><button class="btn btn-success" type="submit" style="margin-top:20px; width:250px;" value="Submit" />Pay Now</button></td>

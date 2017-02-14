@@ -62,7 +62,7 @@ public class PaymentController {
 			    message.setFrom("devops-demo@deloitte.co.uk");
 			    message.setTo(user.getEmail());
 			    message.setSubject("Purchase Confirmation");
-			    message.setText("<center><b>" + user.getFirstName() + "</b> ,thank you for your purchase. <br> Your camera is on its way to " + user.getPostcode() + "</center>", true);
+			    message.setText("<center><b>" + user.getFirstName() + "</b> ,thank you for your purchase. <br> Your camera is on its way to " + user.getPostcode() + "Your order number is 3785.</center>", true);
 			  }
 
 			});

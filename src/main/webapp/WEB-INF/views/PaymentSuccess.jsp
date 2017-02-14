@@ -96,6 +96,18 @@
 								</td>
 							</tr>
 							<tr>
+								<td>Order ID:</td>
+								<td>3785</td>
+							</tr>
+							<tr>
+								<td>Product:</td>
+								<td>Canon EOS 1300D DSLR Camera with 18-55mm Lens</td>
+							</tr>
+							<tr>
+								<td>Price:</td>
+								<td>£329.99</td>
+							</tr>
+							<tr>
 								<td>Name:</td>
 								<td>${user.firstName} ${user.lastName}</td>
 							</tr>
