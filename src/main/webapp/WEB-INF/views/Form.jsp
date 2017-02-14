@@ -95,7 +95,7 @@
 					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="firstName" cssClass="error"></form:errors></h6></div></td>
 				</tr>
 				<tr>
-					<td><h6 style="text-align:right; margin-right:5px;">Last Name*:</h6></td>
+					<td><h6 style="text-align:right; margin-right:5px;">Last Name1*:</h6></td>
 					<td><form:input path="lastName" /></td>
 					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="lastName" cssClass="error"></form:errors></h6></div></td>
 				</tr>
