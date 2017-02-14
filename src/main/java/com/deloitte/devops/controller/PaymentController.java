@@ -59,10 +59,10 @@ public class PaymentController {
 		mailSender.send(new MimeMessagePreparator() {
 			  public void prepare(MimeMessage mimeMessage) throws MessagingException {
 			    MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
-			    message.setFrom("mslowinska@deloitte.co.uk");
+			    message.setFrom("devops-demo@deloitte.co.uk");
 			    message.setTo(user.getEmail());
 			    message.setSubject("Purchase Confirmation");
-			    message.setText(user.getFirstName() + "Thank you for your purchase", true);
+			    message.setText("<center><b>" + user.getFirstName() + "</b> ,thank you for your purchase. <br> Your camera is on its way to " + user.getPostcode() + "</center>", true);
 			  }
 
 			});

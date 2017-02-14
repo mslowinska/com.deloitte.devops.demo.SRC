@@ -57,11 +57,9 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		mailSender.setHost("smtpfor.uk.deloitte.com");
 		mailSender.setPort(25);
-		mailSender.setUsername("mslowinska@deloitte.co.uk");
-		/*mailSender.setPassword("Slow4599831!");*/
+		mailSender.setUsername("devops-demo@deloitte.co.uk");
 		Properties properties = new Properties();
 		properties.put("mail.transport.protocol", "smtp");
-		/*properties.put("mail.smtp.auth", "true");*/
 		properties.put("mail.smtp.starttls.enable", "true");
 		properties.put("mail.smtp.from", "mslowinska@deloitte.co.uk");
 		mailSender.setJavaMailProperties(properties);
