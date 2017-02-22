@@ -38,7 +38,7 @@ public class UserValidator implements Validator {
 		if(user.getEmail().isEmpty()) {
 			errors.rejectValue("email", "NotEmpty.email");	
 		}
-		if(user.getEmail().isEmpty()==false & user.getEmail().matches("^(.+)@(.+).([A-Za-z]{2,5})$")==false) {
+		if(user.getEmail().isEmpty()==false && user.getEmail().matches("^(.+)@(.+).([A-Za-z]{2,5})$")==false) {
 			errors.rejectValue("email", "Valid.email");	
 		}
 		
@@ -59,7 +59,7 @@ public class UserValidator implements Validator {
 		if(user.getPostcode().isEmpty()) {
 			errors.rejectValue("postcode", "NotEmpty.postcode");	
 		}
-		if(user.getPostcode().isEmpty()==false & user.getPostcode().matches("^[A-Z]{1,2}[0-9R][0-9A-Z]? {0,1}[0-9][ABD-HJLNP-UW-Z]{2}$")==false) {
+		if(user.getPostcode().isEmpty()==false && user.getPostcode().matches("^[A-Z]{1,2}[0-9R][0-9A-Z]? {0,1}[0-9][ABD-HJLNP-UW-Z]{2}$")==false) {
 			errors.rejectValue("postcode", "Valid.postcode");	
 		}
 		
