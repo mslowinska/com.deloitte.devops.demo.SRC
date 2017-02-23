@@ -1,20 +1,13 @@
 
 package com.deloitte.devops.model;
 
-import java.io.Serializable;
-import java.util.Date;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.NotNull;
-
 import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.NumberFormat;
-import org.springframework.format.annotation.NumberFormat.Style;;
 
-public class User implements Serializable{
+public class User {
 	
 	@NotNull
 	@Size(min=2, max=20, message="Name must be between 2 and 20 characters")
