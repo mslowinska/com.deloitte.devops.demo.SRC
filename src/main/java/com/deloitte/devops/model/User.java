@@ -1,47 +1,18 @@
 
 package com.deloitte.devops.model;
 
-import javax.validation.constraints.Size;
-import javax.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.format.annotation.NumberFormat;
-
 public class User {
 	
-	@NotNull
-	@Size(min=2, max=20, message="Name must be between 2 and 20 characters")
 	private String firstName;
-	/*2-30 characters, not null*/
 	private String lastName;
-	/*type email, must-have @ */
-	@Email
 	private String email;
-	@NotEmpty
-	/*not empty*/
-/*	private String phone;*/
-	
 	private String address1;
-	//no particular ones, can be empty
 	private String address2;
-	//here we can add custom validator or search for validator online
-	@NotEmpty
-	@Size(min=3, max=7)
 	private String postcode;
-	//not null
-	@NotEmpty
 	private String city;
-	//not null
-	@NotEmpty
 	private String nameCard;
-	//16 digits avoid 12345678910 etc can be custom
-	@NumberFormat
 	private String numberCard;
-	//type date mm/yy
-	@NotEmpty
 	private String expiryDate;
-	//3 digits, ints
-	@NotEmpty
 	private String securityCard;
 
 	public String getFirstName() {
