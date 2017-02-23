@@ -19,8 +19,8 @@
 		<spring.version>4.3.5.RELEASE</spring.version>
 		<cglib.version>2.2.2</cglib.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    	<sonar.language>js</sonar.language>
-    	<sonar.exclusions>**/js/**</sonar.exclusions>
+   
+    	<sonar.exclusions>**.js</sonar.exclusions>
 	</properties>
 
 	<repositories>
