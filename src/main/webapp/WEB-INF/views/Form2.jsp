@@ -109,7 +109,7 @@
 					<td><input style="width:200px;" type="text" name="email" value="${user.email}" readonly></td>
 				</tr>
 <%-- 				<tr>
-					<td><h6 style="text-align:right; margin-right:5px;">Phone11111:</h6></td>
+					<td><h6 style="text-align:right; margin-right:5px;">Phone2:</h6></td>
 					<td><input style="width:200px;" type="text" name="phone" value="${user.phone}" readonly></td>
 				</tr> --%>
 				<tr>
