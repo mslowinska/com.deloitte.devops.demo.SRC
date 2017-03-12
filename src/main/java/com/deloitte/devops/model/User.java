@@ -14,6 +14,7 @@ public class User {
 	private String numberCard;
 	private String expiryDate;
 	private String securityCard;
+	private String phone;
 
 	public String getFirstName() {
 		return firstName;
@@ -27,13 +28,13 @@ public class User {
 		return lastName;
 	}
 	
-/*	public void setPhone(String phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
 	public String getPhone() {
 		return phone;
-	}*/
+	}
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;;
