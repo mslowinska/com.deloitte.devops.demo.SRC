@@ -59,7 +59,7 @@ public class demoTest {
         user_test2.setFirstName("");
         user_test2.setLastName("Doe");
         user_test2.setEmail("email");
-        user_test1.setPhone("0");
+        user_test2.setPhone("0");
         user_test2.setAddress1("address1");
         user_test2.setAddress2("address2");
         user_test2.setPostcode("SE113UU");
