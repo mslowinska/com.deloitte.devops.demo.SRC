@@ -46,7 +46,7 @@ public class UserValidator implements Validator {
 		if(user.getPhone().isEmpty()) {
 			errors.rejectValue("phone", "NotEmpty.phone");	
 		}
-		if(user.getPhone().isEmpty()==false & user.getPhone().matches("[0-9]{10,11}")==false) {
+		if(user.getPhone().isEmpty()==false && user.getPhone().matches("[0-9]{10,11}")==false) {
 			errors.rejectValue("phone", "Valid.phone");	
 		}
 		
