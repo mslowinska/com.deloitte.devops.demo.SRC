@@ -100,7 +100,7 @@
 					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="lastName" cssClass="error"></form:errors></h6></div></td>
 				</tr>
 				<tr>
-					<td><h6 style="text-align:right; margin-right:5px;">E-mail*:</h6></td>
+					<td><h6 style="text-align:right; margin-right:5px;">E-mail**:</h6></td>
 					<td><form:input path="email" /></td>
 					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="email" cssClass="error"></form:errors></h6></div></td>
 				</tr>
