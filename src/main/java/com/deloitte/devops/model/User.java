@@ -28,14 +28,16 @@ public class User {
 		return lastName;
 	}
 	
-	public void setPhone(String phone) {
+	/*Phone use case*/
+	
+/*	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
 	public String getPhone() {
 		return phone;
 	}
-
+*/
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
