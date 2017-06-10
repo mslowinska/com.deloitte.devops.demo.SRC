@@ -43,15 +43,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	}
 	
-/*	Added just in case*/
-/*	@Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
-	}
-	@Bean(name = "multipartResolver")
-    public CommonsMultipartResolver getMultipartResolver() {
-        return new CommonsMultipartResolver();
-    }*/
+
 	@Bean (name ="mailSender")
 	public JavaMailSenderImpl getMailSender() {
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();

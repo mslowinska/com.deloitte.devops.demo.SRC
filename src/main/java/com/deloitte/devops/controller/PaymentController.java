@@ -57,6 +57,7 @@ public class PaymentController {
 		
 		
 		mailSender.send(new MimeMessagePreparator() {
+			  @Override
 			  public void prepare(MimeMessage mimeMessage) throws MessagingException {
 			    MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
 			    message.setFrom("devops-demo@deloitte.co.uk");
