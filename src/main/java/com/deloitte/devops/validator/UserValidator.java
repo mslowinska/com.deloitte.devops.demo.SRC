@@ -53,6 +53,7 @@ public class UserValidator implements Validator {
 			errors.rejectValue("phone", "Valid.phone");	
 		}
 		
+		
 /*		Address 1 field not empty*/
 		if(user.getAddress1().isEmpty()) {
 			errors.rejectValue("address1", "NotEmpty.address1");	
