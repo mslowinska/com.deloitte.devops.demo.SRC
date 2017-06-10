@@ -46,13 +46,13 @@ public class UserValidator implements Validator {
 		
 /*		Phone number not empty and 11 digits with leading 0*/
 		
-		if(user.getPhone().isEmpty()) {
+/*		if(user.getPhone().isEmpty()) {
 			errors.rejectValue("phone", "NotEmpty.phone");	
 		}
 		if(user.getPhone().isEmpty()==false && user.getPhone().matches("[0-9]{10,11}")==false) {
 			errors.rejectValue("phone", "Valid.phone");	
 		}
-		
+		*/
 		
 /*		Address 1 field not empty*/
 		if(user.getAddress1().isEmpty()) {
