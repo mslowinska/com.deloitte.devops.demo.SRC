@@ -30,13 +30,13 @@ public class User {
 	
 	/*Phone use case*/
 	
-	public void setPhone(String phone) {
+/*	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
 	public String getPhone() {
 		return phone;
-	}
+	}*/
 
 	
 	
