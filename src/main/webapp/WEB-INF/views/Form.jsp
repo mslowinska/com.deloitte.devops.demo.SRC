@@ -106,11 +106,11 @@
 				</tr>
 				
 <!-- Phone use case -->
-				<tr>
+<%-- 				<tr>
 					<td><h6 style="text-align:right; margin-right:5px;">Phone:</h6></td>
 					<td><form:input path="phone" /></td>
 					<td><div style="margin-left:10px; color:red;"><h6><form:errors path="phone" cssClass="error"></form:errors></h6></div></td>
-				</tr>
+				</tr> --%>
 				
 				
 				<tr>
