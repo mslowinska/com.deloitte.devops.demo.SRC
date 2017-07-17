@@ -45,7 +45,7 @@ public class demoTest {
         user_test1.setEmail("jdoe@gmail.com");
         
 /*Phone use case*/
-        user_test1.setPhone("07777777777");
+/*        user_test1.setPhone("07777777777");*/
         user_test1.setAddress1("23 XX Street");
         user_test1.setAddress2("XXX");
         user_test1.setPostcode("SE113UU");
@@ -62,7 +62,7 @@ public class demoTest {
         user_test2.setLastName("Doe");
         user_test2.setEmail("email");
 /*Phone use case*/
-        user_test2.setPhone("0");
+/*        user_test2.setPhone("0");*/
         user_test2.setAddress1("address1");
         user_test2.setAddress2("address2");
         user_test2.setPostcode("SE113UU");
