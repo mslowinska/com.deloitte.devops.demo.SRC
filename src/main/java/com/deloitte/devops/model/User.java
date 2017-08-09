@@ -14,7 +14,7 @@ public class User {
 	private String numberCard;
 	private String expiryDate;
 	private String securityCard;
-	private String phone;
+/*	private String phone;*/
 
 	public String getFirstName() {
 		return firstName;
@@ -36,8 +36,8 @@ public class User {
 
 	public String getPhone() {
 		return phone;
-	}
-*/
+	}*/
+
 	
 	
 	
